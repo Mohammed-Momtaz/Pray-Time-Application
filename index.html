@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pray Time</title>
+    <script src="node_modules/axios/dist/axios.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>أوقات الصلاة</h1>
+            <img src="img/NamazVakitLogo.png" alt="">
+        </div>
+        <div class="custom-select-wrapper">
+            <div class="custom-select">Elazig</div>
+            <div class="custom-select-options">
+                <div data-value="Elazig">Elazig</div>
+                <div data-value="Istanbul">Istanbul</div>
+                <div data-value="Gaziantep">Gaziantep</div>
+                <div data-value="Konya">Konya</div>
+            </div>
+        </div>
+    </header>
+    <div class="container main-content">
+        <div class="date">
+            <div class="milady" id="milady"></div>
+            <div class="day" id="day"></div>
+            <div class="hour time" id="hour"></div>
+            <div class="hijri" id="hijri"></div>
+        </div>
+        <div class="pray-timing">
+            <div class="card">
+                <div class="pray">الفجر</div>
+                <div class="time prays"></div>
+            </div>
+            <div class="card">
+                <div class="pray">الشروق</div>
+                <div class="time prays"></div>
+            </div>
+            <div class="card">
+                <div class="pray">الظهر</div>
+                <div class="time prays"></div>
+            </div>
+            <div class="card">
+                <div class="pray">العصر</div>
+                <div class="time prays"></div>
+            </div>
+            <div class="card">
+                <div class="pray">المغرب</div>
+                <div class="time prays"></div>
+            </div>
+            <div class="card">
+                <div class="pray">العشاء</div>
+                <div class="time prays"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
